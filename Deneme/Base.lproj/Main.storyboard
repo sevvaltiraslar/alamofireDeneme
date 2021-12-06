@@ -47,17 +47,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Başlık" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ELC-Y4-hhV">
-                                <rect key="frame" x="20" y="64" width="374" height="55"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="55" id="lGK-HN-Yax"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XMh-fP-fex">
-                                <rect key="frame" x="0.0" y="119" width="414" height="743"/>
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                                 <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <wkWebViewConfiguration key="configuration">
                                     <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
@@ -68,17 +59,13 @@
                         <viewLayoutGuide key="safeArea" id="3ec-e3-8dh"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="ELC-Y4-hhV" firstAttribute="top" secondItem="3ec-e3-8dh" secondAttribute="top" constant="20" id="Ub3-aJ-h2t"/>
-                            <constraint firstItem="XMh-fP-fex" firstAttribute="top" secondItem="ELC-Y4-hhV" secondAttribute="bottom" id="bbu-Rg-HzC"/>
-                            <constraint firstItem="3ec-e3-8dh" firstAttribute="bottom" secondItem="XMh-fP-fex" secondAttribute="bottom" id="com-tw-wvO"/>
-                            <constraint firstItem="XMh-fP-fex" firstAttribute="leading" secondItem="3ec-e3-8dh" secondAttribute="leading" id="fbW-D2-psu"/>
-                            <constraint firstItem="ELC-Y4-hhV" firstAttribute="trailing" secondItem="fiz-iE-4eo" secondAttribute="trailingMargin" id="mNZ-VW-O3b"/>
-                            <constraint firstItem="ELC-Y4-hhV" firstAttribute="leading" secondItem="fiz-iE-4eo" secondAttribute="leadingMargin" id="pDy-Vn-UPn"/>
-                            <constraint firstItem="3ec-e3-8dh" firstAttribute="trailing" secondItem="XMh-fP-fex" secondAttribute="trailing" id="rMI-WK-fdj"/>
+                            <constraint firstItem="XMh-fP-fex" firstAttribute="trailing" secondItem="3ec-e3-8dh" secondAttribute="trailing" id="L5Y-fx-t1q"/>
+                            <constraint firstItem="XMh-fP-fex" firstAttribute="bottom" secondItem="3ec-e3-8dh" secondAttribute="bottom" id="LDe-1U-Q1j"/>
+                            <constraint firstItem="XMh-fP-fex" firstAttribute="leading" secondItem="3ec-e3-8dh" secondAttribute="leading" id="xos-sB-JDC"/>
+                            <constraint firstItem="XMh-fP-fex" firstAttribute="top" secondItem="3ec-e3-8dh" secondAttribute="top" id="yLj-ny-dyr"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="baslikLabel" destination="ELC-Y4-hhV" id="NqV-MM-Fwx"/>
                         <outlet property="webView" destination="XMh-fP-fex" id="66U-2M-sn9"/>
                     </connections>
                 </viewController>

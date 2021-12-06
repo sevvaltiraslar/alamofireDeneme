@@ -11,7 +11,7 @@ import WebKit
 
 class DetailsVC: UIViewController {
 
-    @IBOutlet weak var baslikLabel: UILabel!
+
     @IBOutlet weak var webView: WKWebView!
     var viewModel: DetailsVM!
     override func viewDidLoad() {
